@@ -3,27 +3,27 @@ from config import Config
 
 class Translation(object):
   START_TXT = """<b>Hai {}!!</b>
-<i>I'm Simple Auto file Forward Bot
-This Bot forward all files to One Public channel to Your Personal channel
-More details /help</i>"""
+<i>Aku Bot Auto Forward, 
+Aku dapat Meneruskan Pesan yang Kamu Kirim ke Channel Tertentu
+Bantuan? Ketik /help</i>"""
   CAPTION = "`{}`\n\n" + str(Config.CAPTION)
-  HELP_TXT = """<b>Follow These Steps!!</b>
-<b>• Currectly fill your Heroku Config vars</b> <code>FROM_CHANNEL</code> and <code>TO_CHANNEL</code> <b>and other Vars</b>
-<b>• Then give admin permission in your personal telegram channel</b>
-<b>• Then send any message In your personal telegram channel</b>
-<b>• Then use /run command in your bot</b>
+  HELP_TXT = """<b>Ikuti Langkah-langkah Berikut!!</b>
+<b>• Isi Kolom <code>FROM_CHANNEL</code> and <code>TO_CHANNEL</code> <b>dan lainnya</b> pada Heroku Config Vars</b>
+<b>• Kemudian Beri Izin Admin pada Bot di Telegram Channel</b>
+<b>• Kirim pesan Apapun di Telegram Channel mu</b>
+<b>• dan Gunakan /run untuk Memulai Proses Forward</b>
 
-<b><u>Available Command</b></u>
+<b><u>Daftar Perintah</b></u>
 
 * /start - <b>Bot Alive</b>
-* /help - <b>more help</b>
-* /run - <b>start forward</b>
-* /about - <b>About Me</b>"""
-  ABOUT_TXT = """<b><u>My Info</b></u>
+* /help - <b>Bantuan</b>
+* /run - <b>Mulai Proses</b>
+* /about - <b>Tentang Bot</b>"""
+  ABOUT_TXT = """<b><u>Informasi Tentang Bot</b></u>
 
-<b>Name :</b> <code>Auto Forward Bot</code>
-<b>Credit :</b> <code>Dark Angel</code>
+<b>Name :</b> <code>FBC - FORWARD BOT</code>
+<b>Credit :</b> <code>Kevin Arifandi</code>
 <b>Language :</b> <code>Python3</code>
 <b>Lybrary :</b> <code>Pyrogram v1.2.9</code>
 <b>Server :</b> <code>Heroku</code>
-<b>Build :</b><code>V0.1</code>"""
+<b>Build :</b><code>V1.5</code>"""
