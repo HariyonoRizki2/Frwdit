@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# (c) Dark Angel
+# (c) Kevin Arifandi
 
 from pyrogram import Client, __version__
 
@@ -33,10 +33,10 @@ class Bot(Client):
         usr_bot_me = await self.get_me()
         self.set_parse_mode("html")
         self.LOGGER(__name__).info(
-            f"@{usr_bot_me.username}  started! "
+            f"@{usr_bot_me.username}  Mulai Bekerja! "
         )
         self.USER, self.USER_ID = await User().start()
 
     async def stop(self, *args):
         await super().stop()
-        self.LOGGER(__name__).info("Bot stopped. Bye.")
+        self.LOGGER(__name__).info("Bot Berhenti Bekerja. Selamat Tinggal.")
