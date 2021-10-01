@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# (c) Dark Angel
+# (c) Kevin Arifandi
 
 import os
 import sys
@@ -13,11 +13,11 @@ async def stop_button(c: Client, cb: CallbackQuery):
     await cb.message.delete()
     await cb.answer()
     msg = await c.send_message(
-        text="<i>Trying To Stoping.....</i>",
+        text="<i>MENGHENTIKAN PROSES...</i>",
         chat_id=cb.message.chat.id
     )
     await asyncio.sleep(5)
-    await msg.edit("<i>File Forword Stoped Successfully 👍</i>")
+    await msg.edit("<i>Pembatalan Proses Pengiriman File, Berhasil🎉</i>")
     os.execl(sys.executable, sys.executable, *sys.argv)
     
 @Client.on_callback_query(filters.regex(r'^close_btn$'))
