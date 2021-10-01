@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# (c) Dark Angel
+# (c) Kevin Arifandi
 
 from config import Config
 from config import LOGGER
@@ -24,4 +24,4 @@ class User(Client):
 
     async def stop(self, *args):
         await super().stop()
-        self.LOGGER(__name__).info("Bot stopped. Bye.")
+        self.LOGGER(__name__).info("Bot Berhenti Bekerja. Selamat Tinggal.")
