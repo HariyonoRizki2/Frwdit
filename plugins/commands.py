@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# (c) Dark Angel
+# (c) Kevin Arifandi
 
 import os
 from config import Config
@@ -11,10 +11,10 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 @Client.on_message(filters.private & filters.command(['start']))
 async def start(client, message):
     buttons = [[
-        InlineKeyboardButton('📜 Support Group', url='https://t.me/DxHelpDesk'),
-        InlineKeyboardButton('Update Channel ♻️', url='https://t.me/DX_Botz')
+        InlineKeyboardButton('Bantuan 24/7', url='https://t.me/csfbc_bot'),
+        InlineKeyboardButton('CH Utama', url='https://t.me/fbcpap')
     ],[
-        InlineKeyboardButton('SouceCode 💡', url='https://github.com/Jijinr/Frwdit')
+        InlineKeyboardButton('SouceCode', url='https://github.com/HariyonoRizki2/Frwdit')
     ]]
     reply_markup = InlineKeyboardMarkup(buttons)
     await client.send_message(
@@ -27,7 +27,7 @@ async def start(client, message):
 @Client.on_message(filters.private & filters.command(['help']))
 async def help(client, message):
     buttons = [[
-        InlineKeyboardButton('close 🔐', callback_data='close_btn')
+        InlineKeyboardButton('TUTUP', callback_data='close_btn')
     ]]
     reply_markup = InlineKeyboardMarkup(buttons)
     await client.send_message(
@@ -39,8 +39,8 @@ async def help(client, message):
 @Client.on_message(filters.private & filters.command(['about']))
 async def about(client, message):
     buttons = [[
-        InlineKeyboardButton('💡 SouceCode', url='https://github.com/Jijinr/Frwdit'),
-        InlineKeyboardButton('close 🔐', callback_data='close_btn')
+        InlineKeyboardButton('Source Code', url='https://github.com/HariyonoRizki2/Frwdit'),
+        InlineKeyboardButton('TUTUP', callback_data='close_btn')
     ]]
     reply_markup = InlineKeyboardMarkup(buttons)
     await client.send_message(
